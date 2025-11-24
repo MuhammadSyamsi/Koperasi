@@ -1,0 +1,26 @@
+ERROR - 2025-04-19 02:44:08 --> mysqli_sql_exception: Column 'bukti' cannot be null in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ke...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ke...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ke...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\koperasi\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(48): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->simpan()
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-19 02:44:08 --> Column 'bukti' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `keuangan` (`id`, `catatan`, `keterangan`, `nominal`, `unit`, `tanggal`, `bukti`) VALUES (:id:, :catatan:, :keterangan:, :nominal:, :unit:, :tanggal:, :bukti:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(48): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

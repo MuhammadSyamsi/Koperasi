@@ -1,0 +1,8 @@
+CRITICAL - 2025-06-30 07:37:30 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 146.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Home.php(51): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

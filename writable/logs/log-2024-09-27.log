@@ -1,0 +1,409 @@
+CRITICAL - 2024-09-27 06:20:01 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\Home.php on line 116.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\koperasi\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-27 06:20:55 --> Class "App\Models\PengeluaranModel" not found
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-27 06:22:23 --> Class "App\Models\PengeluaranModel" not found
+in APPPATH\Controllers\Home.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 06:23:19 --> mysqli_sql_exception: Table 'koperasi.$pengeluaran' doesn't exist in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 06:23:19 --> Table 'koperasi.$pengeluaran' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `keterangan`, `id`
+FROM `pemasukan`
+LEFT JOIN `$pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 06:23:45 --> mysqli_sql_exception: Table 'koperasi.$pengeluaran' doesn't exist in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 06:23:45 --> Table 'koperasi.$pengeluaran' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `keterangan`, `id`
+FROM `pemasukan`
+LEFT JOIN `$pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 06:27:33 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 06:27:33 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `keterangan`, `id`
+FROM `pemasukan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 06:28:17 --> mysqli_sql_exception: Unknown column 'keterangan' in 'field list' in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 06:28:17 --> Unknown column 'keterangan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `keterangan`
+FROM `pemasukan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(33): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:18:44 --> mysqli_sql_exception: Table 'koperasi.$pengeluaran' doesn't exist in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:18:44 --> Table 'koperasi.$pengeluaran' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`
+FROM `pemasukan`
+LEFT JOIN `$pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:18:58 --> mysqli_sql_exception: Column 'tanggal' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:18:58 --> Column 'tanggal' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:19:30 --> mysqli_sql_exception: Column 'tanggal' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:19:30 --> Column 'tanggal' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:21:03 --> mysqli_sql_exception: FUNCTION pemasukan.YEAR does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT pemasuka...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT pemasuka...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT pemasuka...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT pemasuka...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:21:03 --> FUNCTION pemasukan.YEAR does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT pemasukan.YEAR(tanggal) as tahun, pemasukan.monthname(tanggal) as bulan, pemasukan.sum(jumlah) as jumlah, `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:21:16 --> mysqli_sql_exception: Column 'tanggal' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:21:16 --> Column 'tanggal' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:22:46 --> mysqli_sql_exception: Column 'jumlah' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT sum(juml...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT sum(juml...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT sum(juml...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sum(juml...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:22:46 --> Column 'jumlah' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT sum(jumlah) as jumlah, `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:23:10 --> mysqli_sql_exception: Column 'id' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `id`, `k...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `k...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `k...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `k...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:23:10 --> Column 'id' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 07:28:11 --> mysqli_sql_exception: Column 'tanggal' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 07:28:11 --> Column 'tanggal' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-27 11:19:54 --> mysqli_sql_exception: Column 'tanggal' in field list is ambiguous in C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\koperasi\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT YEAR(tan...', 0)
+#1 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT YEAR(tan...')
+#2 C:\xampp\htdocs\koperasi\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT YEAR(tan...')
+#3 C:\xampp\htdocs\koperasi\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tan...', Array, false)
+#4 C:\xampp\htdocs\koperasi\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\koperasi\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\koperasi\app\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#8 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\koperasi\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\koperasi\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-27 11:19:54 --> Column 'tanggal' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT YEAR(tanggal) as tahun, monthname(tanggal) as bulan, sum(jumlah) as jumlah, `id`, `keterangan`
+FROM `pemasukan`
+LEFT JOIN `pengeluaran` ON `pengeluaran`.`keterangan` = `pemasukan`.`keterangan`
+WHERE month(tanggal) = month(current_date)
+AND `unit` = :unit:
+GROUP BY `tahun`, `bulan`
+ORDER BY `tahun` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

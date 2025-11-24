@@ -1,0 +1,137 @@
+CRITICAL - 2025-10-31 11:37:59 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(70): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:38:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 11:38:56 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(70): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:40:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 11:40:07 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(70): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:40:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 11:40:41 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(63): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:40:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 11:40:42 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(63): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:40:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 11:40:44 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH/Views/pages/info.php on line 15.
+ 1 APPPATH/Views/pages/info.php(15): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(228): include('/home/u927597906/domains/kantin.darulhijrah.in/app/Views/pages/info.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(63): view()
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 11:41:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 15:04:24 --> Invalid file: "keuangan/info.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(51): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 15:04:25 --> Invalid file: "keuangan/info.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(51): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2025-10-31 15:04:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$keuanganModel is deprecated in APPPATH/Controllers/Home.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 15:04:47 --> Invalid file: "keuangan/info.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(51): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-10-31 15:06:13 --> Invalid file: "keuangan/info.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(51): view()
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->info()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

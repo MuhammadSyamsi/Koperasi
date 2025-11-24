@@ -1,0 +1,59 @@
+CRITICAL - 2025-04-22 07:04:22 --> Undefined variable $shu_kantin
+in APPPATH\Views\pages\barang.php on line 18.
+ 1 APPPATH\Views\pages\barang.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $shu_kantin', 'C:\\xampp\\htdocs\\koperasi\\app\\Views\\pages\\barang.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\koperasi\\app\\Views\\pages\\barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pages/barang', [], true)
+ 5 APPPATH\Controllers\Home.php(71): view('pages/barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->barang()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 08:04:23 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 08:05:20 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 08:05:50 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 08:08:07 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 08:08:14 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-22 10:57:51 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Home.php(50): CodeIgniter\HTTP\Files\UploadedFile->move('images/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
