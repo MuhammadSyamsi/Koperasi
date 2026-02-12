@@ -15,10 +15,12 @@ $routes->get('logout', 'Auth::logout');
 $routes->get('invoice', 'InvoiceController::index');
 $routes->get('invoice/getData', 'InvoiceController::getData');
 $routes->get('invoice/view/(:num)', 'InvoiceController::view/$1');
+$routes->get('/', 'Home::indexb');
+$routes->get('/surabaya', 'Home::surabaya');
 
 // Semua halaman Home hanya bisa diakses setelah login
 $routes->group('', function($routes) {
-    $routes->get('/', 'Laporan::index');
+    $routes->get('beranda', 'Laporan::index');
     $routes->get('info', 'Home::info');
     $routes->post('transaksi/update', 'Home::update');
     $routes->post('transaksi/delete', 'Home::delete');

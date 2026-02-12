@@ -1,0 +1,84 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Pattern */
+.islamic-pattern {
+  background-image:
+    repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.03) 10px, rgba(255,255,255,.03) 20px),
+    repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,.03) 10px, rgba(255,255,255,.03) 20px);
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn .8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cards */
+.card-hover {
+  transition: all .4s cubic-bezier(.175,.885,.32,1.275);
+}
+.card-hover:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+}
+
+.structure-card {
+  position: relative;
+  overflow: hidden;
+}
+.structure-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+  transition: left .5s;
+}
+.structure-card:hover::after {
+  left: 100%;
+}
+
+/* Buttons */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 999px;
+  background: rgba(255,255,255,.2);
+  transform: translate(-50%,-50%);
+  transition: width .6s,height .6s;
+}
+.btn-primary:hover::before {
+  width: 300px;
+  height: 300px;
+}

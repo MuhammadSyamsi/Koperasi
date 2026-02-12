@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1765175643;_ci_previous_url|s:35:"https://kantin.darulhijrah.in/login";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:15:"csrf_token_name";s:32:"0bd310b5d08675ea0f00ea03c807e166";s:5:"login";s:6:"kantin";s:8:"password";s:3:"123";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:5:"error";s:3:"old";}error|s:25:"Email atau password salah";

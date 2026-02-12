@@ -94,10 +94,14 @@ document.getElementById("btnSaveImg").addEventListener("click", function() {
     const invoice = document.getElementById("invoiceCard");
 
     html2canvas(invoice, { scale: 2 }).then(canvas => {
-        const imgData = canvas.toDataURL("image/png");
+
+        // Ubah PNG menjadi JPEG
+        const imgData = canvas.toDataURL("image/jpeg", 0.95); 
+        // 0.95 = kualitas gambar JPEG (bisa 0.1 – 1)
+
         const link = document.createElement("a");
         link.href = imgData;
-        link.download = "invoice_<?= $invoice['nomor_invoice']; ?>.png";
+        link.download = "invoice_<?= $invoice['nomor_invoice']; ?>.jpg";
         link.click();
     });
 });

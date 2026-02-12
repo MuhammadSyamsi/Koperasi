@@ -19,7 +19,17 @@ class Home extends BaseController
     return view('pages/home', $data);
   }
 
-    public function info()
+  public function indexb(): string
+  {
+    return view('landing');
+  }
+  
+  public function surabaya(): string
+  {
+      return view('laporan/surabaya');
+  }
+  
+  public function info()
     {
         $request = service('request');
 
